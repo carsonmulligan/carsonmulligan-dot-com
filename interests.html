@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Carson Mulligan</title>
+    <title>Interests | Carson Mulligan</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -37,41 +37,28 @@
             color: #58a6ff;
             font-size: 1rem;
             margin-bottom: 1rem;
+            margin-top: 2rem;
         }
-        h3 {
-            font-size: 1rem;
-            margin-top: 1rem;
-        }
-        .toc {
-            background: #161b22;
-            border: 1px solid #30363d;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        .toc-title {
-            cursor: pointer;
-        }
-        .toc ul {
-            margin-left: 1.5rem;
-            margin-top: 0.5rem;
-        }
-        .section {
-            margin-bottom: 2rem;
+        h2:first-of-type {
+            margin-top: 0;
         }
         ul {
-            margin-left: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
         li {
             margin-bottom: 0.5rem;
+            padding-left: 1rem;
         }
-        .job-title {
-            color: #c9d1d9;
-        }
-        .company {
+        li::before {
+            content: "* ";
+            margin-left: -1rem;
             color: #8b949e;
         }
-        .date {
+        .desc {
             color: #8b949e;
+            font-size: 0.9rem;
         }
         @media (max-width: 600px) {
             body { padding: 1rem; font-size: 14px; }
@@ -79,9 +66,9 @@
     </style>
 </head>
 <body>
-    <div class="box">+------------------------+
-| About | Carson Mulligan |
-+------------------------+</div>
+    <div class="box">+-----------------------------+
+| Interests | Carson Mulligan |
++-----------------------------+</div>
 
     <nav>
         <a href="index.html">Home</a>
@@ -93,24 +80,26 @@
 
     <hr>
 
-    <div class="toc">
-        <span class="toc-title">&#9654; Table of Contents</span>
-        <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-        </ul>
-    </div>
+    <h2>## Movies</h2>
+    <ul>
+        <li><a href="https://youtu.be/0F5zEHVl3tE?si=Bry7Bv_Z-69aR4O0">Waterloo (1970)</a></li>
+        <li><a href="https://youtu.be/MVeoDiMw830?si=DLD2jYxlLz6SEigT">甜蜜蜜 (Comrades: Almost a Love Story)</a> <span class="desc">- my favorite Chinese movie</span></li>
+    </ul>
 
-    <div class="section" id="experience">
-        <h2>## Experience</h2>
-        <p>See <a href="experience-data.json">experience-data.json</a> for detailed work history.</p>
-        <!-- Experience entries loaded from gitignored file -->
-    </div>
+    <h2>## Documentaries</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PLZxIFAN12m6wmm5K8fPkApSB1F90885hS">WWII in Color</a> <span class="desc">- playlist</span></li>
+    </ul>
 
-    <div class="section" id="education">
-        <h2>## Education</h2>
-        <p>See <a href="experience-data.json">experience-data.json</a> for detailed education history.</p>
-        <!-- Education entries loaded from gitignored file -->
-    </div>
+    <h2>## Music</h2>
+    <ul>
+        <li><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO1gSBy1?si=64f40c9d79974077">Music for Work</a> <span class="desc">- Spotify playlist</span></li>
+    </ul>
+
+    <h2>## Misc</h2>
+    <ul>
+        <li><a href="https://carsonmulligan.github.io/moms-recipes/">Mom's Recipes</a> <span class="desc">- family cookbook website</span></li>
+        <li><a href="https://www.amazon.com/Dr-Lesa-Mulligans-Cookbook-Handwritten-ebook/dp/B0G3ZZ44S5/">Dr. Lesa Mulligan's Cookbook</a> <span class="desc">- Amazon book</span></li>
+    </ul>
 </body>
 </html>
