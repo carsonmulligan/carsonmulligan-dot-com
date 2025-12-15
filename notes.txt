@@ -1,0 +1,10 @@
+I want this to be a place where I can show links of my work and talk about the things that I'm interested in, kind of just walk people through what I've done in my life. I will give you a bunch of links to products that I've made. So, for instance, the Latin English Bible app, the DXP Labs AI Image Generator app, the Vertical Chinese iOS app, some other websites that I've created, and then links to YouTube where I'm speaking Chinese, repos where I have language learning resources. I just want this to be a cool website that I can quickly send to people and they can see all of the work that I've created. A book that I've written, that type of stuff. So please see these links and then spin me up a website using PHP, index.php, vanilla.js, and jQuery to make the website. And I will give you the links here.
+
+- https://github.com/carsonmulligan
+- speaking chinese https://www.youtube.com/watch?v=UVtrvArSihQ&ab_channel=PekingUniversity
+- https://x.com/us_east_3
+- dxp labs ios https://apps.apple.com/us/app/dxp-labs-ai-image-generator/id6747624476
+- verbum dei latin bible https://apps.apple.com/us/app/verbum-dei-latin-bible-prayer/id6745453748
+- vertical chinese https://apps.apple.com/us/app/verticalchinese/id6739588080
+- linkedin https://www.linkedin.com/in/carsonmulliganosu/
+- amazon book https://a.co/d/1ZOCC7S
