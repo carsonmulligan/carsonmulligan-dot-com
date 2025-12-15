@@ -36,10 +36,13 @@
         h2 {
             color: #58a6ff;
             font-size: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
         }
         h3 {
+            color: #8b949e;
             font-size: 1rem;
+            margin-bottom: 0.5rem;
             margin-top: 1rem;
         }
         .toc {
@@ -52,23 +55,21 @@
             cursor: pointer;
         }
         .toc ul {
-            margin-left: 1.5rem;
+            list-style: none;
+            margin-left: 1rem;
             margin-top: 0.5rem;
         }
-        .section {
-            margin-bottom: 2rem;
+        .toc li {
+            margin-bottom: 0.25rem;
+        }
+        .toc .sub {
+            margin-left: 1rem;
         }
         ul {
-            margin-left: 1.5rem;
+            list-style: none;
         }
         li {
             margin-bottom: 0.5rem;
-        }
-        .job-title {
-            color: #c9d1d9;
-        }
-        .company {
-            color: #8b949e;
         }
         .date {
             color: #8b949e;
@@ -94,39 +95,59 @@
 
     <hr>
 
+    <p>Languages, logistics, farming.</p>
+
     <div class="toc">
-        <span class="toc-title">&#9654; Table of Contents</span>
+        <span class="toc-title">&#9660; Table of Contents</span>
         <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
+            <li>* <a href="#experience">Experience</a>
+                <ul class="sub">
+                    <li>o <a href="#industry">Industry</a></li>
+                    <li>o <a href="#teaching">Teaching</a></li>
+                    <li>o <a href="#other">Other</a></li>
+                </ul>
+            </li>
+            <li>* <a href="#education">Education</a></li>
         </ul>
     </div>
 
-    <div class="section" id="experience">
-        <h2>## Experience</h2>
-        <ul>
-            <li>Senior Implementation Data Scientist | <span class="company">Altana</span> <span class="date">(2022-Present)</span></li>
-            <li>Adjunct Instructor of Chinese | <span class="company">Oklahoma City University</span> <span class="date">(2022)</span></li>
-            <li>Le Wagon Coding Bootcamp | <span class="company">Lisbon</span> <span class="date">(2022)</span></li>
-            <li>Air Export Operator | <span class="company">Mainfreight Americas</span> <span class="date">(2021-2022)</span></li>
-            <li>Bilingual Assistant | <span class="company">Middlebury College</span> <span class="date">(2019)</span></li>
-            <li>Investment Banking Summer Analyst | <span class="company">Seaport Global</span> <span class="date">(2017)</span></li>
-            <li>NAISG Winter Analyst | <span class="company">Morgan Stanley</span> <span class="date">(2017)</span></li>
-            <li>White House Liaison Office Intern | <span class="company">U.S. Department of State</span> <span class="date">(2016)</span></li>
-        </ul>
-    </div>
+    <h2 id="experience">## Experience</h2>
 
-    <div class="section" id="education">
-        <h2>## Education</h2>
-        <ul>
-            <li>MA, Law & Society | <span class="company">Yenching Academy of Peking University</span> <span class="date">(2019-2021)</span></li>
-            <li>Economics & Chinese | <span class="company">Oklahoma State University</span> <span class="date">(2014-2018)</span></li>
-            <li>ICLP | <span class="company">National Taiwan University</span> <span class="date">(2018-2019)</span></li>
-            <li>Chinese Intensive | <span class="company">Middlebury College</span> <span class="date">(2016, 2018)</span></li>
-            <li>Chinese | <span class="company">Fudan University</span> <span class="date">(2017)</span></li>
-            <li>Portuguese | <span class="company">Caminhos Language Centre, Rio</span> <span class="date">(2021)</span></li>
-            <li>French | <span class="company">Alliance Francaise DC</span> <span class="date">(2023-2024)</span></li>
-        </ul>
-    </div>
+    <h3 id="industry">### Industry</h3>
+    <ul>
+        <li>* Senior Implementation Data Scientist | <a href="https://altana.ai">Altana</a> <span class="date">(2025-Present)</span></li>
+        <li>* Implementation Data Scientist | <a href="https://altana.ai">Altana</a> <span class="date">(2022-2025)</span></li>
+        <li>* Air Export Operator | <a href="https://www.mainfreight.com">Mainfreight Americas</a> <span class="date">(2021-2022)</span></li>
+        <li>* Investment Banking Summer Analyst | Seaport Global <span class="date">(2017)</span></li>
+        <li>* NAISG Winter Analyst | Morgan Stanley <span class="date">(2017)</span></li>
+        <li>* White House Liaison Office Intern | U.S. Department of State <span class="date">(2016)</span></li>
+    </ul>
+
+    <h3 id="teaching">### Teaching</h3>
+    <ul>
+        <li>* Adjunct Instructor of Chinese | <a href="https://www.okcu.edu">Oklahoma City University</a> <span class="date">(2022)</span></li>
+        <li>* Bilingual Assistant | <a href="https://www.middlebury.edu/language-schools">Middlebury Language Schools</a> <span class="date">(2019)</span></li>
+    </ul>
+
+    <h3 id="other">### Other</h3>
+    <ul>
+        <li>* Le Wagon Coding Bootcamp | <a href="https://www.lewagon.com">Lisbon</a> <span class="date">(2022)</span><br>
+            Ruby on Rails, JavaScript, SQL: 10-weeks intensive</li>
+    </ul>
+
+    <h2 id="education">## Education</h2>
+    <ul>
+        <li>* MA, Law & Society | <a href="https://yenchingacademy.pku.edu.cn">Yenching Academy of Peking University</a> <span class="date">(2019-2021)</span><br>
+            Thesis: On Chinese Maritime Exploration 1400-1435</li>
+        <li>* Economics & Chinese | <a href="https://go.okstate.edu">Oklahoma State University</a> <span class="date">(2014-2018)</span><br>
+            Phi Beta Kappa, J. Roy Thompson Fellow</li>
+        <li>* ICLP | <a href="https://iclp.ntu.edu.tw">National Taiwan University</a> <span class="date">(2018-2019)</span></li>
+        <li>* Chinese Intensive | <a href="https://www.middlebury.edu/language-schools/languages/chinese">Middlebury College</a> <span class="date">(2016, 2018)</span><br>
+            Kathryn Wasserman Davis Fellow for Peace</li>
+        <li>* Chinese | <a href="https://www.fudan.edu.cn">Fudan University</a> <span class="date">(2017)</span><br>
+            Fudan Foreign Student Debate Society Co-Founder</li>
+        <li>* Portuguese | <a href="https://cfrj.com.br">Caminhos Language Centre</a>, Rio <span class="date">(2021)</span></li>
+        <li>* French | Alliance Francaise DC <span class="date">(2023-2024)</span></li>
+    </ul>
 </body>
 </html>

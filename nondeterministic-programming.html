@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nondeterministic Programming | Carson Mulligan</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #c9d1d9;
+            background: #0d1117;
+            padding: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        a { color: #8b8bcd; }
+        a:hover { text-decoration: underline; }
+        .box {
+            white-space: pre;
+            margin-bottom: 1.5rem;
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        nav a {
+            margin-right: 1rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #30363d;
+            margin: 1.5rem 0;
+        }
+        h1 {
+            color: #c9d1d9;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        .subtitle {
+            color: #8b949e;
+            margin-bottom: 0.5rem;
+        }
+        .meta {
+            color: #8b949e;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        blockquote {
+            border-left: 2px solid #30363d;
+            padding-left: 1rem;
+            color: #8b949e;
+            margin: 1rem 0;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">+---------------------------+
+| Writing | Carson Mulligan |
++---------------------------+</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="writing.html">Writing</a>
+        <a href="interests.html">Interests</a>
+        <a href="projects.html">Projects</a>
+        <a href="apps.html">Apps</a>
+    </nav>
+
+    <hr>
+
+    <h1># Nondeterministic Programming</h1>
+    <p class="subtitle">The Rise and Fall of the Cursor Empire</p>
+    <p class="meta">Published 08/22/2025</p>
+    <p class="meta">=======================</p>
+
+    <p>I remember downloading Cursor for the first time and being blown away.</p>
+
+    <blockquote>
+        Nondeterministic Programming<br>
+        same inputs, different outputs
+    </blockquote>
+
+    <p>For a while it seemed like intelligence was free—and it will get there, I'm sure, but for then it was actually just a VC-funded discount. In any event, we could now create with AI by holding conversations that could both produce and refer back to diagonal off ramps. In other words, we could start off by creating project notes, having Cursor turn that text file into a project plan, tweak the plan, declare a stack, then set it off and watch it build from scratch. I could return to pre-AI repos and remember what I was doing in an instant, code up a new feature, and push it to production. I could rewrite entire portions, upgrade versions—my gosh how much of a pain it used to be to update versions, now it's a solved problem for me. It felt liberating in the way that building with GPT-3.5 felt liberating. This was all for personal projects for about 3-6 months.</p>
+
+    <p>For 20 bucks a month this service was a steal. Cursor defaulted then and still defaults to Claude models, to which I and many others are loyal as a result. Not because we love the values, or the design, or the founders of Anthropic, but rather because the model is good. Claude models (3.5 Sonnet through present Claude 4 Sonnet and Opus) are damn good. They find problems and fix them. They do not think needlessly and seemingly waste time as it feels like the O3 and Gemini 2.5 Pro thinking models do. It just works. In the early days I never ran out of tokens. This was awesome. We all later found out Cursor was taking a huge loss on users like me, and even worse, there were whales out there running background agents all the time. To skip a bit to the end here, Cursor ended up showing us how much we spent on the Claude models and tried to get us to stop. Saying things in the chat function like "You have used $181 this month on Claude 4 Sonnet. Please enable usage-based pricing." This rubbed me the wrong way from the get-go and reminded me of microeconomics class. Why, from a psychological point of view would you tell me the amount I would pay (nearly 10x what I currently pay) then ask me to enable that with no cap on top? Something better may have been more simple, such as "You have hit your limit, please visit this site to continue on this model" then explain there, and show that you can set caps, if that is even possible. Instead what I and likely many others did was use the other models, like O3, Gemini 2.5 Pro, and even Claude 3.5 to try and solve problems. I learned something different then about human psychology.</p>
+
+    <p>We all got addicted to Claude 4 around the same time—and again, I think this is what eventually led to the mass exodus of Cursor users to Claude Code. The first time I used Claude 4 I could not believe the quality. It did not make mistakes, but rather on the first try it just got it right. This was an upgrade at the time for me from Claude 3.5, which I thought was very good. Claude 4, though, was like magic. Here is where the interesting bit in human psychology comes out—after a while, it just felt like normal. I got used to this level of quality and only realized it as I threw problems to O3, 2.5 Pro, and Claude 3.5, realizing how far in love I had fallen with Claude 4. I remember not using Cursor for a few days because of the limits, and feeling sad about it. I remember realizing that the changes I made with the subpar models were actually just harming my projects. So I stopped working on them for a few days, then explored Claude Code.</p>
+
+    <p>The Cursor team had checked all the boxes along the way for me to switch—they showed me that:</p>
+
+    <ol>
+        <li>They needed to charge me 10x the current rate to make ends meet—so much so they felt the need to guilt trip users in the product</li>
+        <li>The alternative models were not only worse than Claude 4, but using them with the same approach I had used Claude 4 with, and become accustomed to, was actually detrimental to these projects' success</li>
+        <li>That in order to survive they would never be able to sustainably charge less than or equal to the owner of the Claude models, Anthropic</li>
+    </ol>
+
+    <p>So why not buy straight from the source?</p>
+
+    <p>I wasn't really sure how Claude Code worked, since it was a CLI tool. So, like before any big purchase I make, I went to YouTube, watched a couple tutorials, then bought Claude Code. I'm a little ashamed to admit that I bought the $200 a month option right off the bat. There were $17, $100, and $200 a month options—and in the moment I felt so scarred by the inability to work with these magical models, and the rate limits that I went all in. I look back now and think it's probably not worth it for my usage patterns and may downgrade a notch. If anyone knows good, productive ways to run background agents please let me know. In any event, after using Claude Code, and being able to spin up multiple agents in one project working in tandem, I felt the hook again—the joy of non-deterministic building. I got better at creating text artifacts, at prompting towards simple, repeatable, production-ready outputs. I cancelled ChatGPT and Cursor and now use Claude Code. So that's that.</p>
+
+    <blockquote>
+        Nondeterministic Programming<br>
+        same inputs, different outputs
+    </blockquote>
+</body>
+</html>
