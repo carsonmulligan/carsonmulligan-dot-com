@@ -33,27 +33,24 @@
             border-top: 1px solid #30363d;
             margin: 1.5rem 0;
         }
-        .license {
-            margin-bottom: 2rem;
-        }
-        .post-list {
+        ul {
             list-style: none;
             margin: 0;
             padding: 0;
         }
-        .post-list li {
+        li {
             display: flex;
             margin-bottom: 0.5rem;
         }
-        .post-date {
+        .date {
             color: #8b949e;
             width: 100px;
             flex-shrink: 0;
         }
         @media (max-width: 600px) {
             body { padding: 1rem; font-size: 14px; }
-            .post-list li { flex-direction: column; }
-            .post-date { width: auto; margin-bottom: 0.25rem; }
+            li { flex-direction: column; }
+            .date { width: auto; margin-bottom: 0.25rem; }
         }
     </style>
 </head>
@@ -73,19 +70,17 @@
 
     <hr>
 
-    <p class="license">All material distributed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> unless otherwise specified.</p>
-
-    <ul class="post-list">
+    <ul>
         <li>
-            <span class="post-date">08/22/2025</span>
-            <a href="https://carsonmulligan.substack.com/p/the-rise-and-fall-of-the-cursor-empire">Nondeterministic Programming: The Rise and Fall of the Cursor Empire</a>
+            <span class="date">08/22/2025</span>
+            <a href="nondeterministic-programming.html">Nondeterministic Programming</a>
         </li>
         <li>
-            <span class="post-date">08/21/2025</span>
+            <span class="date">08/21/2025</span>
             <a href="https://carsonmulligan.substack.com/p/vibe-coding-a-history">vibe coding, a history</a>
         </li>
         <li>
-            <span class="post-date">2024</span>
+            <span class="date">2024</span>
             <a href="https://a.co/d/1ZOCC7S">Book (Amazon)</a>
         </li>
     </ul>
