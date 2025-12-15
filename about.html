@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Carson Mulligan</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #c9d1d9;
+            background: #0d1117;
+            padding: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        a { color: #8b8bcd; }
+        a:hover { text-decoration: underline; }
+        .box {
+            white-space: pre;
+            margin-bottom: 1.5rem;
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        nav a {
+            margin-right: 1rem;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #30363d;
+            margin: 1.5rem 0;
+        }
+        h2 {
+            color: #58a6ff;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .toc {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .toc-title {
+            cursor: pointer;
+        }
+        .toc ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            margin-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .job-title {
+            color: #c9d1d9;
+        }
+        .company {
+            color: #8b949e;
+        }
+        .date {
+            color: #8b949e;
+        }
+        @media (max-width: 600px) {
+            body { padding: 1rem; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">+------------------------+
+| About | Carson Mulligan |
++------------------------+</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="writing.html">Writing</a>
+    </nav>
+
+    <hr>
+
+    <div class="toc">
+        <span class="toc-title">&#9654; Table of Contents</span>
+        <ul>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="experience">
+        <h2>## Experience</h2>
+        <p>See <a href="experience-data.json">experience-data.json</a> for detailed work history.</p>
+        <!-- Experience entries loaded from gitignored file -->
+    </div>
+
+    <div class="section" id="education">
+        <h2>## Education</h2>
+        <p>See <a href="experience-data.json">experience-data.json</a> for detailed education history.</p>
+        <!-- Education entries loaded from gitignored file -->
+    </div>
+</body>
+</html>

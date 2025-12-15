@@ -6,153 +6,61 @@
     <title>Carson Mulligan</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --bg: #0d1117;
-            --fg: #c9d1d9;
-            --fg-dim: #8b949e;
-            --accent: #58a6ff;
-            --border: #30363d;
-            --card-bg: #161b22;
-        }
         body {
             font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.6;
-            color: var(--fg);
-            background: var(--bg);
+            color: #c9d1d9;
+            background: #0d1117;
             padding: 2rem;
-            max-width: 900px;
+            max-width: 700px;
             margin: 0 auto;
         }
-        a { color: var(--accent); text-decoration: none; }
+        a { color: #8b8bcd; }
         a:hover { text-decoration: underline; }
-        header { border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; margin-bottom: 2rem; }
-        h1 { font-size: 1.5rem; font-weight: 600; margin-bottom: 0.25rem; }
-        .tagline { color: var(--fg-dim); }
-        nav { margin-top: 1rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
-        nav a { color: var(--fg-dim); }
-        nav a:hover { color: var(--accent); }
-        section { margin-bottom: 2.5rem; }
-        h2 { font-size: 1rem; font-weight: 600; color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            padding: 1rem;
-            border-radius: 6px;
+        .box {
+            white-space: pre;
+            margin-bottom: 1.5rem;
         }
-        .card:hover { border-color: var(--accent); }
-        .card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; }
-        .card p { color: var(--fg-dim); font-size: 0.85rem; margin-bottom: 0.75rem; }
-        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
-        .tag {
-            font-size: 0.75rem;
-            padding: 0.15rem 0.5rem;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 3px;
-            color: var(--fg-dim);
+        nav {
+            margin-bottom: 2rem;
         }
-        .skills { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-        .social { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-        footer { border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 2rem; color: var(--fg-dim); font-size: 0.85rem; }
+        nav a {
+            margin-right: 1rem;
+        }
+        .info-row {
+            display: flex;
+            margin-bottom: 0.25rem;
+        }
+        .info-label {
+            width: 80px;
+            text-align: right;
+            padding-right: 0.5rem;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
         @media (max-width: 600px) {
-            body { padding: 1rem; font-size: 13px; }
-            nav { gap: 1rem; }
+            body { padding: 1rem; font-size: 14px; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Carson Mulligan</h1>
-        <p class="tagline">Developer, Language Enthusiast, Creator</p>
-        <nav>
-            <a href="#apps">apps</a>
-            <a href="#web">web</a>
-            <a href="#languages">languages</a>
-            <a href="#writing">writing</a>
-            <a href="#connect">connect</a>
-        </nav>
-    </header>
+    <div class="box">+---------------------+
+| Carson Mulligan     |
++---------------------+</div>
 
-    <main>
-        <section id="apps">
-            <h2>Mobile Applications</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="tags"><span class="tag">iOS</span><span class="tag">Latin</span></div>
-                    <h3>Verbum Dei - Latin Bible</h3>
-                    <p>Latin-English Bible for prayer and study.</p>
-                    <a href="https://apps.apple.com/us/app/verbum-dei-latin-bible-prayer/id6745453748" target="_blank">App Store &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="tags"><span class="tag">iOS</span><span class="tag">AI</span></div>
-                    <h3>DXP Labs AI Image Generator</h3>
-                    <p>Create images from text prompts using AI.</p>
-                    <a href="https://apps.apple.com/us/app/dxp-labs-ai-image-generator/id6747624476" target="_blank">App Store &rarr;</a>
-                </div>
-                <div class="card">
-                    <div class="tags"><span class="tag">iOS</span><span class="tag">Chinese</span></div>
-                    <h3>Vertical Chinese</h3>
-                    <p>Learn Chinese with vertical text display.</p>
-                    <a href="https://apps.apple.com/us/app/verticalchinese/id6739588080" target="_blank">App Store &rarr;</a>
-                </div>
-            </div>
-        </section>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="writing.html">Writing</a>
+    </nav>
 
-        <section id="web">
-            <h2>Web Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="tags"><span class="tag">Open Source</span></div>
-                    <h3>GitHub</h3>
-                    <p>Open-source contributions and personal projects.</p>
-                    <a href="https://github.com/carsonmulligan" target="_blank">github.com/carsonmulligan &rarr;</a>
-                </div>
-            </div>
-        </section>
+    <p>Languages, logistics, farming.</p>
 
-        <section id="languages">
-            <h2>Languages</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="tags"><span class="tag">Chinese</span><span class="tag">Video</span></div>
-                    <h3>Speaking Chinese</h3>
-                    <p>Chinese language proficiency demonstration at Peking University.</p>
-                    <a href="https://www.youtube.com/watch?v=UVtrvArSihQ" target="_blank">YouTube &rarr;</a>
-                </div>
-            </div>
-            <div class="skills" style="margin-top: 1rem;">
-                <span class="tag">Mandarin Chinese</span>
-                <span class="tag">Latin</span>
-                <span class="tag">Language Learning</span>
-            </div>
-        </section>
-
-        <section id="writing">
-            <h2>Writing</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="tags"><span class="tag">Book</span></div>
-                    <h3>Published Author</h3>
-                    <p>Book available on Amazon.</p>
-                    <a href="https://a.co/d/1ZOCC7S" target="_blank">Amazon &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="connect">
-            <h2>Connect</h2>
-            <div class="social">
-                <a href="https://github.com/carsonmulligan" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/carsonmulliganosu/" target="_blank">LinkedIn</a>
-                <a href="https://x.com/us_east_3" target="_blank">X</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        &copy; Carson Mulligan
-    </footer>
+    <div class="info-row">
+        <span class="info-label">social:</span>
+        <span><a href="https://github.com/carsonmulligan">github</a>, <a href="https://www.linkedin.com/in/carsonmulliganosu/">linkedin</a>, <a href="https://x.com/us_east_3">x</a></span>
+    </div>
 </body>
 </html>
